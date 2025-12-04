@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum Vitae</title>
+    <title>CV - Miguel Angel Garcia Huerta</title>
     <style>
         * {
             margin: 0;
@@ -13,44 +13,49 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 40px;
+            padding: 50px 40px;
             text-align: center;
         }
 
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            font-weight: 600;
         }
 
         .header p {
             font-size: 1.2em;
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             margin-top: 20px;
             flex-wrap: wrap;
         }
 
         .contact-info span {
-            font-size: 0.9em;
+            color: white;
+            opacity: 0.9;
         }
 
         .content {
@@ -58,7 +63,7 @@
         }
 
         .section {
-            margin-bottom: 35px;
+            margin-bottom: 40px;
         }
 
         .section h2 {
@@ -69,67 +74,89 @@
             border-bottom: 3px solid #667eea;
         }
 
-        .section h3 {
+        .section-content {
+            margin-left: 20px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-item h3, .education-item h3 {
             color: #333;
             font-size: 1.3em;
             margin-bottom: 5px;
         }
 
-        .section h4 {
+        .experience-item .company, .education-item .institution {
             color: #666;
-            font-size: 1.1em;
-            font-weight: normal;
-            margin-bottom: 10px;
-        }
-
-        .date {
-            color: #999;
             font-style: italic;
-            margin-bottom: 10px;
-        }
-
-        .description {
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .skill-item {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 5px;
-            border-left: 4px solid #667eea;
-        }
-
-        .skill-item h4 {
-            color: #333;
             margin-bottom: 5px;
         }
 
-        ul {
+        .experience-item .date, .education-item .date {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .experience-item ul {
             margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .experience-item li {
+            margin-bottom: 5px;
             color: #555;
         }
 
-        ul li {
-            margin-bottom: 8px;
-            line-height: 1.5;
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .skills-list li {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .about-text {
+            color: #555;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .soft-skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-left: 0;
+        }
+
+        .soft-skills li {
+            color: #555;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            list-style: none;
+            border-left: 4px solid #667eea;
         }
 
         @media print {
             body {
-                background-color: white;
+                background: white;
                 padding: 0;
             }
 
             .container {
                 box-shadow: none;
+                max-width: 100%;
             }
         }
     </style>
@@ -137,96 +164,110 @@
 <body>
     <div class="container">
         <div class="header">
-<<<<<<< HEAD
-            <h1>Miguel Angel G</h1>
-=======
-            <h1>Miguel Angel Garcia</h1>
->>>>>>> 1fafe454b1e89352040b17e8125d31ee8690d123
-            <p>Título Profesional o Puesto Deseado</p>
+            <h1>Miguel Angel Garcia Huerta</h1>
+            <p>Ingeniero en Sistemas Computacionales</p>
             <div class="contact-info">
-                <span>📧 email@ejemplo.com</span>
-                <span>📱 +52 123 456 7890</span>
-                <span>📍 Ciudad, País</span>
-                <span>💼 linkedin.com/in/tuperfil</span>
+                <span>📧 miguelagh171@gmail.com</span>
+                <span>📱 461 385 8815</span>
+                <span>📍 Celaya, Guanajuato</span>
             </div>
         </div>
 
         <div class="content">
             <div class="section">
                 <h2>Perfil Profesional</h2>
-                <p class="description">
-                    Profesional con [X] años de experiencia en [tu área]. Especializado en [tus especialidades principales]. 
-                    Apasionado por [tus intereses profesionales] y con habilidades comprobadas en [tus fortalezas clave]. 
-                    Busco contribuir con mis conocimientos y experiencia en un entorno dinámico y desafiante.
-                </p>
+                <div class="section-content">
+                    <p class="about-text">
+                        Soy una persona puntual, amable y con una sólida orientación al cliente, desarrollada a lo largo de mi vida gracias a la experiencia en un negocio familiar. Durante el último año, impartí cursos de programación básica a jóvenes de 13 a 16 años, lo que fortaleció mis habilidades de comunicación y enseñanza. Me considero una persona proactiva, con gran disposición para aprender y mejorar continuamente, siempre dispuesto a preguntar y profundizar en los temas necesarios para un mejor desempeño. Además, cuento con experiencia brindando soporte técnico a computadoras, laptops e impresoras personales, lo que me ha permitido desarrollar habilidades técnicas y de atención personalizada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Formación Académica</h2>
+                <div class="section-content">
+                    <div class="education-item">
+                        <h3>Ingeniería en Sistemas Computacionales (en curso)</h3>
+                        <div class="institution">Tecnológico de Celaya</div>
+                        <div class="date">2019 - Actualidad</div>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>Bachillerato con título de Técnico en Programación</h3>
+                        <div class="institution">CBTIS 172, Cortazar, Guanajuato</div>
+                        <div class="date">2016 - 2019</div>
+                    </div>
+                </div>
             </div>
 
             <div class="section">
                 <h2>Experiencia Laboral</h2>
+                <div class="section-content">
+                    <div class="experience-item">
+                        <h3>Instructor de Cursos de Programación Básica</h3>
+                        <div class="company">Independiente</div>
+                        <ul>
+                            <li>Impartición de cursos a jóvenes de 13 a 16 años</li>
+                            <li>Elaboración de materiales didácticos</li>
+                            <li>Resolución de dudas y acompañamiento en el aprendizaje</li>
+                        </ul>
+                    </div>
 
-                <div>
-                    <h3>Puesto de Trabajo</h3>
-                    <h4>Nombre de la Empresa</h4>
-                    <p class="date">Enero 2020 - Presente</p>
-                    <ul>
-                        <li>Logro o responsabilidad principal que demuestra tu impacto</li>
-                        <li>Proyecto importante en el que participaste y sus resultados</li>
-                        <li>Habilidad técnica o de liderazgo que desarrollaste</li>
-                        <li>Mejora o innovación que implementaste</li>
-                    </ul>
+                    <div class="experience-item">
+                        <h3>Soporte Técnico y Atención a Clientes</h3>
+                        <div class="company">Experiencia adquirida en negocio familiar y de manera independiente</div>
+                        <ul>
+                            <li>Diagnóstico y reparación de computadoras y laptops</li>
+                            <li>Mantenimiento preventivo y correctivo de equipos</li>
+                            <li>Instalación y configuración de software y hardware</li>
+                            <li>Atención personalizada a clientes, explicando de manera sencilla los procesos realizados</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
 
-                <div style="margin-top: 25px;">
-                    <h3>Puesto Anterior</h3>
-                    <h4>Nombre de la Empresa</h4>
-                    <p class="date">Junio 2017 - Diciembre 2019</p>
-                    <ul>
-                        <li>Responsabilidad clave del puesto</li>
-                        <li>Logro medible (usa números cuando sea posible)</li>
-                        <li>Colaboración con otros equipos o departamentos</li>
+            <div class="section">
+                <h2>Conocimientos Técnicos</h2>
+                <div class="section-content">
+                    <ul class="skills-list">
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>JavaScript</li>
+                        <li>Microsoft Office</li>
+                        <li>Excel</li>
+                        <li>PowerPoint</li>
+                        <li>Word</li>
+                        <li>Redes (cableado)</li>
+                        <li>Mantenimiento de PC</li>
+                        <li>Soporte Técnico</li>
+                        <li>Configuración de Impresoras</li>
                     </ul>
                 </div>
             </div>
 
             <div class="section">
-                <h2>Educación</h2>
-
-                <div>
-                    <h3>Título Universitario</h3>
-                    <h4>Universidad o Institución</h4>
-                    <p class="date">2013 - 2017</p>
-                    <p class="description">Especialización o mención honorífica si aplica</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Habilidades</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <h4>Técnicas</h4>
-                        <p>HTML, CSS, JavaScript, Python, SQL</p>
-                    </div>
-                    <div class="skill-item">
-                        <h4>Herramientas</h4>
-                        <p>Git, VS Code, Photoshop, Excel</p>
-                    </div>
-                    <div class="skill-item">
-                        <h4>Idiomas</h4>
-                        <p>Español (Nativo), Inglés (Avanzado)</p>
-                    </div>
-                    <div class="skill-item">
-                        <h4>Blandas</h4>
-                        <p>Liderazgo, Comunicación, Trabajo en equipo</p>
-                    </div>
+                <h2>Habilidades Blandas</h2>
+                <div class="section-content">
+                    <ul class="soft-skills">
+                        <li>✓ Facilidad de trato con clientes y usuarios</li>
+                        <li>✓ Capacidad para explicar conceptos técnicos de manera sencilla</li>
+                        <li>✓ Trabajo en equipo y colaboración</li>
+                        <li>✓ Proactividad y disposición para aprender</li>
+                        <li>✓ Comunicación efectiva</li>
+                        <li>✓ Orientación al cliente</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="section">
                 <h2>Certificaciones</h2>
-                <ul>
-                    <li><strong>Nombre de la Certificación</strong> - Institución (Año)</li>
-                    <li><strong>Otra Certificación</strong> - Institución (Año)</li>
-                </ul>
+                <div class="section-content">
+                    <div class="education-item">
+                        <h3>Tecnología Microsoft para la Productividad</h3>
+                        <div class="institution">Curso certificado de competencias laborales</div>
+                        <div class="date">MS Excel, MS PowerPoint, MS Word</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
