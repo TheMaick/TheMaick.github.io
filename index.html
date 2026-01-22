@@ -4,162 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Miguel Angel Garcia Huerta</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 40px 20px;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 50px 40px;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.95;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-
-        .contact-info span {
-            color: white;
-            opacity: 0.9;
-        }
-
-        .content {
-            padding: 40px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #667eea;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
-        }
-
-        .section-content {
-            margin-left: 20px;
-        }
-
-        .experience-item, .education-item {
-            margin-bottom: 25px;
-        }
-
-        .experience-item h3, .education-item h3 {
-            color: #333;
-            font-size: 1.3em;
-            margin-bottom: 5px;
-        }
-
-        .experience-item .company, .education-item .institution {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 5px;
-        }
-
-        .experience-item .date, .education-item .date {
-            color: #999;
-            font-size: 0.9em;
-            margin-bottom: 10px;
-        }
-
-        .experience-item ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        .experience-item li {
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            list-style: none;
-            margin-left: 0;
-        }
-
-        .skills-list li {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-
-        .about-text {
-            color: #555;
-            text-align: justify;
-            line-height: 1.8;
-        }
-
-        .soft-skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-left: 0;
-        }
-
-        .soft-skills li {
-            color: #555;
-            padding: 10px;
-            background: #f8f9fa;
-            border-radius: 5px;
-            list-style: none;
-            border-left: 4px solid #667eea;
-        }
-
-        @media print {
-            body {
-                background: white;
-                padding: 0;
-            }
-
-            .container {
-                box-shadow: none;
-                max-width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -178,7 +23,14 @@
                 <h2>Perfil Profesional</h2>
                 <div class="section-content">
                     <p class="about-text">
-                        Soy una persona puntual, amable y con una sólida orientación al cliente, desarrollada a lo largo de mi vida gracias a la experiencia en un negocio familiar. Durante el último año, impartí cursos de programación básica a jóvenes de 13 a 16 años, lo que fortaleció mis habilidades de comunicación y enseñanza. Me considero una persona proactiva, con gran disposición para aprender y mejorar continuamente, siempre dispuesto a preguntar y profundizar en los temas necesarios para un mejor desempeño. Además, cuento con experiencia brindando soporte técnico a computadoras, laptops e impresoras personales, lo que me ha permitido desarrollar habilidades técnicas y de atención personalizada.
+                        Soy una persona puntual, amable y con una sólida orientación al cliente, 
+                        desarrollada a lo largo de mi vida gracias a la experiencia en un negocio familiar. 
+                        Durante el último año, impartí cursos de programación básica a jóvenes de 13 a 16 años, 
+                        lo que fortaleció mis habilidades de comunicación y enseñanza. Me considero una persona proactiva, 
+                        con gran disposición para aprender y mejorar continuamente, siempre dispuesto a preguntar y profundizar 
+                        en los temas necesarios para un mejor desempeño. Además, cuento con experiencia brindando 
+                        soporte técnico a computadoras, laptops e impresoras personales, lo que me ha permitido 
+                        desarrollar habilidades técnicas y de atención personalizada.
                     </p>
                 </div>
             </div>
@@ -232,7 +84,6 @@
                     <ul class="skills-list">
                         <li>Java</li>
                         <li>C#</li>
-                        <li>JavaScript</li>
                         <li>Microsoft Office</li>
                         <li>Excel</li>
                         <li>PowerPoint</li>
@@ -250,7 +101,6 @@
                 <div class="section-content">
                     <ul class="soft-skills">
                         <li>✓ Facilidad de trato con clientes y usuarios</li>
-                        <li>✓ Capacidad para explicar conceptos técnicos de manera sencilla</li>
                         <li>✓ Trabajo en equipo y colaboración</li>
                         <li>✓ Proactividad y disposición para aprender</li>
                         <li>✓ Comunicación efectiva</li>
