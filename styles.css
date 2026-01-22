@@ -91,3 +91,17 @@ body {
     padding: 10px;
     border-left: 4px solid #667eea;
 }
+.cert-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85em;
+}
+
+.cert-link:hover {
+    opacity: 0.9;
+}
